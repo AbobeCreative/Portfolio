@@ -1,174 +1,130 @@
-<!DOCTYPE html>
-<html lang="ru">
+
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        h1 {
-            margin: 0;
-        }
+  <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px 0;
-        }
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
+  <link rel="icon" type="image/png" href="{% static "portfolio/Logo.png" %}">
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
-
-        .projects, .certificates, .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .card h3 {
-            margin: 15px 0;
-            font-size: 1.5rem;
-        }
-
-        .card p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .skills ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .skills li {
-            background-color: #eee;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 1.2rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
+  <title>Yours portfolio</title>
 </head>
+
 <body>
 
-<header>
-    <h1>Моё Портфолио</h1>
-</header>
-
-<nav>
-    <a href="#projects">Проекты</a>
-    <a href="#certificates">Сертификаты</a>
-    <a href="#skills">Навыки</a>
-</nav>
-
-<section id="projects">
-    <h2 class="section-title">Мои Проекты</h2>
-    <div class="projects">
-        <div class="card">
-            <a href="https://satbayev.university/ru/news/v-gorodskom-sorevnovanii-po-kiberbezopasnosti-satbayev-university-pobedili-druzya?ysclid=m40w2hu6nx945256028" target="_blank">
-                <img src="poster.png" alt="Проект 1">
-            </a>
-            <h3>SUCTF 2023 Design</h3>
-            <p>«SUCTF-2023-Red-Line» - творческая площадка, направленная на развитие этичного общества специалистов по кибербезопасности в Казахстане. Мероприятие не только предоставило студентам возможность реализовать свой потенциал в области анализа объекта атак</p>
-        </div>
-        <div class="card">
-            <a href="https://vk.com/wall-48302905_8544?ysclid=m40w705t53558565997" target="_blank">
-                <img src="poster22.png" alt="Проект 2">
-            </a>
-            <h3>SUCTF 2022 Design</h3>
-            <p>«SUCTF 2022» - мероприятие, направленное на создание этичного общества специалистов по кибербезопасности, которое будет развивать сферу кибербезопасности в Satbayev University. ⚡ В течение месяца команды готовились и обучались Новым навыкам</p>
-        </div>
-        <div class="card">
-            <a href="https://www.instagram.com/hydra_academy_official/" target="_blank">
-                <img src="hydra.png" alt="Проект 4">
-            </a>
-            <h3>Hydra Academy courses Design</h3>
-            <p>Вас приветствует "Hydra Academy"🥳. Наша команда состоит из Специалистов информационной безопасности в области этичного хакинга 👨‍💻 Наши цели 🎯 🔰Сделать знания доступными 🔰Показать векторы развития 🔰Материал простым языком 🔰Возможность развит</p>
-        </div>
-    </div>
-</section>
-
-<section id="certificates">
-    <h2 class="section-title">Мой Сертификат</h2>
-    <div class="card">
-        <img src="cert.png" alt="Сертификат">
-        <h3>Hydra Academy Certificate</h3>
-        <p>Сертификат о прохождении курса Hydra Academy (Introduction to cybersecurity and pentest" с двойной сертификацией 📑(Hydra Academy | Satbayev University)</p>
-    </div>
-</section>
-
-<section id="skills">
-    <h2 class="section-title">Мои Навыки</h2>
-    <div class="skills">
-        <ul>
-            <li>C++</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Django</li>
-            <li>JavaScript</li>
-            <li>Python</li>
+  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <span> Yours portfolio </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% static "portfolio/resume.pdf" %}">Resume</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/" target="_blank">Twitter</a>
+          </li>
+          <li>
+          
+          </li>
         </ul>
+      </div>
     </div>
-</section>
+  </nav>
+  <div class="container">
 
-<footer>
-    <p>&copy; 2024 Мое портфолио. Все права защищены.</p>
-</footer>
+    <div class="container">
+      <!-- Информация о себе -->
+      <div class="jumbotron text-center mt-4">
+        <h1 class="display-4">Привет! Я Аббасов Расул</h1>
+        <p class="lead">Я веб-разработчик, специализирующийся на HTNL, CSS, Django и JavaScript. Люблю создавать удобные и функциональные сайты.</p>
+      </div>
+    
+      <!-- Проекты -->
+      <div class="container my-5">
+        <h2 class="text-center mb-4">Мои проекты</h2>
+        <div class="row">
+          <!-- Проект 1 -->
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="project1.png" alt="Проект 1">
+              <div class="card-body">
+                <h5 class="card-title">Burger</h5>
+                <p class="card-text">Этот сайт был создан для бургерной, на этом сайте можно посмотреть все товраы и заказать вкусную еду.</p>
+                <a href="https://ссылка-на-проект" target="_blank" class="btn btn-primary">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+          <!-- Проект 2 -->
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="project2.png" alt="Проект 2">
+              <div class="card-body">
+                <h5 class="card-title">Asus</h5>
+                <p class="card-text">Онлайн магазин электроники Asus. На сайте можно посмотреть все гаджеты компании Asus и заказать если понравился.</p>
+                <a href="https://ссылка-на-проект" target="_blank" class="btn btn-primary">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Сертификат -->
+      <div class="container text-center my-5">
+        <h2>Мой сертификат</h2>
+        <img src="certificate.png" alt="Сертификат" class="img-fluid mt-3" style="max-width: 500px;">
+        <p class="mt-2">Сертификат 2022 год.</p>
+      </div>
+    
+      <!-- Навыки -->
+      <div class="container my-5">
+        <h2 class="text-center">Навыки</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h5>Языки программирования</h5>
+            <p>Python, JavaScript, HTML, CSS</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Фреймворки</h5>
+            <p>Django</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Инструменты</h5>
+            <p>Figma</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Контакты -->
+      <footer class="text-center py-4">
+        <h5>Контакты</h5>
+        <p>Email: <a href="mailto:example@example.com">rasulabbasov@gmail.com</a></p>
+      </footer>
+    </div>
 
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
