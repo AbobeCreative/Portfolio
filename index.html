@@ -1,4 +1,4 @@
-{% load static %}
+
 <!doctype html>
 <html lang="en">
 
@@ -48,7 +48,7 @@
     </div>
   </nav>
   <div class="container">
-    {% block content %}
+
     <div class="container">
       <!-- Информация о себе -->
       <div class="jumbotron text-center mt-4">
@@ -63,7 +63,7 @@
           <!-- Проект 1 -->
           <div class="col-md-6">
             <div class="card">
-              <img class="card-img-top" src="{% static 'portfolio/project1.png' %}" alt="Проект 1">
+              <img class="card-img-top" src="project1.png" alt="Проект 1">
               <div class="card-body">
                 <h5 class="card-title">Burger</h5>
                 <p class="card-text">Этот сайт был создан для бургерной, на этом сайте можно посмотреть все товраы и заказать вкусную еду.</p>
@@ -74,7 +74,7 @@
           <!-- Проект 2 -->
           <div class="col-md-6">
             <div class="card">
-              <img class="card-img-top" src="{% static 'portfolio/project2.png' %}" alt="Проект 2">
+              <img class="card-img-top" src="project2.png" alt="Проект 2">
               <div class="card-body">
                 <h5 class="card-title">Asus</h5>
                 <p class="card-text">Онлайн магазин электроники Asus. На сайте можно посмотреть все гаджеты компании Asus и заказать если понравился.</p>
@@ -88,7 +88,7 @@
       <!-- Сертификат -->
       <div class="container text-center my-5">
         <h2>Мой сертификат</h2>
-        <img src="{% static 'portfolio/certificate.png' %}" alt="Сертификат" class="img-fluid mt-3" style="max-width: 500px;">
+        <img src="certificate.png" alt="Сертификат" class="img-fluid mt-3" style="max-width: 500px;">
         <p class="mt-2">Сертификат 2022 год.</p>
       </div>
     
@@ -117,7 +117,7 @@
         <p>Email: <a href="mailto:example@example.com">rasulabbasov@gmail.com</a></p>
       </footer>
     </div>
-    {% endblock %}
+
   </div>
 
   <!-- Optional JavaScript -->
